@@ -87,6 +87,22 @@ nav a:hover {
     letter-spacing: 2px;
 }
 
+.presented-by {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-top: 12px;
+}
+
+.presented-by a {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.presented-by a:hover {
+    color: var(--accent);
+}
+
 .hero-tagline {
     color: var(--text-secondary);
     font-size: 1.2rem;

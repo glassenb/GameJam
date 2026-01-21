@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making AI Less of a Black Box for Doctors | Healthcare Games Diversifier</title>
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="problem.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <span class="logo-icon">&#9670;</span>
+                <span class="logo-text">GGJ 2026 Israel</span>
+            </div>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../index.html#about">About</a>
+                <a href="../index.html#schedule">Schedule</a>
+                <a href="../index.html#problems">Problems</a>
+            </nav>
+        </header>
+
+        <main>
+            <article class="problem-page">
+                <a href="../index.html#problems" class="back-link">&larr; All Problems</a>
+
+                <h1>Making AI Less of a Black Box for Doctors</h1>
+                <p class="problem-subtitle">AI Literacy for Clinicians</p>
+
+                <div class="clinician-card">
+                    <span class="clinician-label">Advising Clinician</span>
+                    <span class="clinician-name">Shifra Samber</span>
+                    <span class="clinician-org">CHEO Research Institute</span>
+                </div>
+
+                <section class="problem-section">
+                    <h2>The Challenge</h2>
+                    <p>Doctors are trained to ask a fundamental question before using any treatment: <strong>"How does this work?"</strong></p>
+
+                    <p>In medicine, this is the <strong>mechanism of action (MOA)</strong>. If a clinician understands <em>why</em> something works, <em>where</em> it fails, and <em>what assumptions it relies on</em>, they can use it safely and appropriately.</p>
+
+                    <p>AI and machine learning tools increasingly influence diagnosis, triage, imaging, risk prediction, and treatment recommendations. But for many clinicians, AI feels different from every other tool they use:</p>
+                    <ul>
+                        <li>It's opaque</li>
+                        <li>It's statistical, not causal</li>
+                        <li>It adapts over time</li>
+                        <li>Its failures can be subtle and biased</li>
+                    </ul>
+
+                    <p>For good reason, many doctors are hesitant. They don't understand:</p>
+                    <ul>
+                        <li>What the model is actually "learning"</li>
+                        <li>Why training matters</li>
+                        <li>What kinds of mistakes it's prone to</li>
+                        <li>When confidence is earned vs misleading</li>
+                        <li>Why bias appears, and how data choices create it</li>
+                    </ul>
+
+                    <p>This lack of a mental model slows adoption, erodes trust, and creates misuse.</p>
+                </section>
+
+                <section class="problem-section highlight-section">
+                    <h2>The Big Idea</h2>
+                    <p>Medicine already uses games to explain complex systems. MOA games turn invisible biological processes (binding, inhibition, pathways) into <em>interactive mechanics</em> doctors can reason about.</p>
+
+                    <p>We're asking the same question for AI:</p>
+
+                    <p class="big-idea"><strong>Can a well-designed game help clinicians build an intuitive mental model of how AI works: its strengths, limits, and failure modes?</strong></p>
+
+                    <p>Games are uniquely good at:</p>
+                    <ul>
+                        <li>Turning abstract systems into visible feedback</li>
+                        <li>Showing gradual improvement through iteration</li>
+                        <li>Making tradeoffs tangible</li>
+                        <li>Letting players <em>cause</em> errors, not just read about them</li>
+                    </ul>
+                </section>
+
+                <section class="problem-section">
+                    <div class="image-gallery" style="grid-template-columns: 1fr;">
+                        <figure class="gallery-image">
+                            <img src="../images/neural-network-3b1b.jpg" alt="3Blue1Brown neural network visualization showing interconnected layers" style="height: auto; max-height: 300px;">
+                            <figcaption>3Blue1Brown's visualization of a neural network. Can games make these concepts intuitive?</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="problem-section">
+                    <h2>What the Game Should Help Doctors Understand</h2>
+                    <p class="section-note">Not math. Not coding. Conceptual understanding through play.</p>
+
+                    <p>Key ideas to explore:</p>
+                    <ul>
+                        <li>What artificial neural networks are (and aren't)</li>
+                        <li>How they differ from biological neurons doctors already understand</li>
+                        <li>How training shapes behavior</li>
+                        <li>Why data quality, balance, and labeling matter</li>
+                        <li>The difference between training data and validation data</li>
+                        <li>Why overfitting feels "confident but wrong"</li>
+                        <li>How bias emerges from data, not intent</li>
+                        <li>What AI is good at vs dangerously bad at</li>
+                    </ul>
+                </section>
+
+                <section class="problem-section">
+                    <h2>Core Gameplay Directions</h2>
+                    <p class="section-note">These are starting points, not constraints.</p>
+
+                    <h3>1. Train-the-Network Games</h3>
+                    <p>Players feed examples into a simple neural network and watch it change:</p>
+                    <ul>
+                        <li>Visualize weights strengthening and weakening</li>
+                        <li>See performance improve (and sometimes degrade)</li>
+                        <li>Experience what happens when data is skewed, sparse, or noisy</li>
+                        <li>Compare outcomes using different datasets (medical or non-medical)</li>
+                    </ul>
+                    <p class="section-note">Reward comes from <em>understanding</em>, not perfection.</p>
+
+                    <h3>2. Dataset Curation Challenges</h3>
+                    <p>Players don't tweak the model. They curate the data:</p>
+                    <ul>
+                        <li>Decide what examples to include or exclude</li>
+                        <li>Balance populations</li>
+                        <li>Choose labels</li>
+                        <li>Hold back validation data</li>
+                    </ul>
+                    <p>Then watch how the same model behaves very differently depending on those choices.</p>
+
+                    <h3>3. Failure Mode Discovery</h3>
+                    <p>Instead of "winning," players are asked to:</p>
+                    <ul>
+                        <li>Stress the system</li>
+                        <li>Find where it breaks</li>
+                        <li>Trigger confident-but-wrong predictions</li>
+                        <li>Learn when <em>not</em> to trust the output</li>
+                    </ul>
+                    <p class="section-note">Success is recognizing limitations.</p>
+                </section>
+
+                <section class="problem-section highlight-section">
+                    <h2>What Makes This Fun for Game Developers</h2>
+                    <p>This is a systems-design playground:</p>
+                    <ul>
+                        <li>Feedback loops</li>
+                        <li>Emergent behavior</li>
+                        <li>Tradeoffs and unintended consequences</li>
+                        <li>Visualizing invisible processes</li>
+                        <li>Turning statistics into motion, flow, and change</li>
+                    </ul>
+                    <p>There's no need for realism-heavy graphics. Clarity and elegance matter more than fidelity.</p>
+                </section>
+
+                <section class="problem-section">
+                    <h2>Target Audience</h2>
+                    <ul>
+                        <li>Physicians and residents</li>
+                        <li>Medical students</li>
+                        <li>Clinicians encountering AI-enabled tools in practice</li>
+                        <li>No coding or math background assumed</li>
+                    </ul>
+                </section>
+
+                <section class="problem-section">
+                    <h2>Jam-Appropriate Scope</h2>
+                    <ul>
+                        <li>Small, interpretable models</li>
+                        <li>Simple classification or pattern-recognition tasks</li>
+                        <li>Stylized representations of networks and data</li>
+                        <li>Focus on <em>intuition</em>, not technical accuracy at scale</li>
+                    </ul>
+                    <p class="section-note">Mocking complexity is encouraged. Clarity beats completeness.</p>
+                </section>
+
+                <section class="problem-section warning-section">
+                    <h2>What This Is Not</h2>
+                    <ul>
+                        <li><strong>Not a coding tutorial</strong></li>
+                        <li><strong>Not an AI certification course</strong></li>
+                        <li><strong>Not a sales demo for AI tools</strong></li>
+                        <li><strong>Not claiming AI "thinks like humans"</strong></li>
+                    </ul>
+                    <p class="emphasis">The goal is <strong>conceptual literacy</strong>, not expertise.</p>
+                </section>
+
+                <section class="problem-section highlight-section">
+                    <h2>Why This Matters</h2>
+                    <p>As AI becomes embedded in clinical workflows, understanding <em>how</em> it behaves becomes a safety issue, not a technical curiosity.</p>
+
+                    <p class="emphasis">This project asks game developers to help solve a trust gap in healthcare: by giving clinicians a way to <em>play with the system</em> before they're asked to rely on it.</p>
+
+                    <p>Strong projects may receive visibility and follow-on interest through <strong>Sheba ARC</strong> and its broader healthcare innovation ecosystem.</p>
+                </section>
+
+                <a href="../index.html#problems" class="back-link bottom-link">&larr; All Problems</a>
+            </article>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 <a href="https://www.glassenberg.com" target="_blank">Sam Glassenberg</a> &bull; <a href="https://www.shebaonline.org/department/arc-center-israels-heart-of-digital-innovation-in-medicine/" target="_blank">Sheba ARC</a> &bull; <a href="https://www.smkb.ac.il/" target="_blank">Kibbutzim College</a></p>
+        </footer>
+    </div>
+</body>
+</html>

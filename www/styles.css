@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-primary: #0a0a0f;
+    --bg-secondary: #12121a;
+    --bg-card: #1a1a24;
+    --text-primary: #e8e8ed;
+    --text-secondary: #8888a0;
+    --accent: #00d4ff;
+    --accent-dim: #0099bb;
+    --border: #2a2a3a;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.logo-icon {
+    color: var(--accent);
+    font-size: 1.4rem;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+}
+
+nav a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 80px 0 60px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    color: var(--accent);
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+.hero-tagline {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    margin-top: 24px;
+    font-style: italic;
+}
+
+.divider {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    margin: 40px auto 0;
+}
+
+/* Sections */
+.section {
+    padding: 60px 0;
+    border-top: 1px solid var(--border);
+}
+
+.section h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 24px;
+    color: var(--text-primary);
+}
+
+.section p {
+    color: var(--text-secondary);
+    max-width: 600px;
+}
+
+/* Highlights */
+.highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 32px;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text-primary);
+}
+
+.highlight-icon {
+    color: var(--accent);
+}
+
+/* Location Card */
+.location-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px;
+    margin-top: 32px;
+    max-width: 400px;
+}
+
+.location-card h3 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent);
+    margin-bottom: 12px;
+}
+
+.location-note {
+    font-size: 0.9rem;
+    margin-top: 8px;
+}
+
+/* Schedule */
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.schedule-day {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.schedule-day h3 {
+    color: var(--accent);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.schedule-list {
+    list-style: none;
+}
+
+.schedule-list li {
+    color: var(--text-secondary);
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.9rem;
+}
+
+.schedule-list li:last-child {
+    border-bottom: none;
+}
+
+.schedule-list .time {
+    color: var(--text-primary);
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.info-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.info-card h4 {
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-card p {
+    font-size: 0.9rem;
+}
+
+/* Partners */
+.partners-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    margin-top: 24px;
+}
+
+.partner-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.partner-logo:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.partner-logo-light {
+    background: #f0f0f0;
+}
+
+.partner-logo img {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Problems */
+.problems-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.problem-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px;
+    text-decoration: none;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.problem-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.problem-category {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent);
+    margin-bottom: 8px;
+}
+
+.problem-card h3 {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.problem-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.problem-clinician {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+}
+
+/* Examples */
+.examples-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.example-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.example-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.example-image {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    background: var(--bg-secondary);
+}
+
+.example-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.example-card h3 {
+    color: var(--accent);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 20px 20px 12px;
+}
+
+.example-card p {
+    font-size: 0.9rem;
+    margin: 0 20px 12px;
+}
+
+.example-highlight {
+    color: var(--text-primary) !important;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+/* Card shared styles */
+.coming-soon {
+    color: var(--accent);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    padding: 40px 0;
+    border-top: 1px solid var(--border);
+    text-align: center;
+}
+
+footer p {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+footer a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: var(--accent);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+    }
+
+    .schedule-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .problems-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .examples-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+
+    .partners-grid {
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .partner-logo img {
+        height: 60px;
+    }
+
+    .examples-grid {
+        grid-template-columns: 1fr;
+    }
+}

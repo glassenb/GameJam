@@ -1,0 +1,202 @@
+/* Problem Page Styles */
+
+.problem-page {
+    padding: 40px 0 60px;
+}
+
+.back-link {
+    display: inline-block;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 24px;
+    transition: opacity 0.2s;
+}
+
+.back-link:hover {
+    opacity: 0.8;
+}
+
+.bottom-link {
+    margin-top: 48px;
+    margin-bottom: 0;
+}
+
+.problem-page h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.problem-subtitle {
+    color: var(--accent);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 32px;
+}
+
+.clinician-card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 20px 24px;
+    margin-bottom: 48px;
+    max-width: 300px;
+}
+
+.clinician-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+}
+
+.clinician-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.clinician-org {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* Sections */
+.problem-section {
+    margin-bottom: 48px;
+}
+
+.problem-section h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+}
+
+.problem-section h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 24px 0 12px;
+}
+
+.problem-section p {
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+    line-height: 1.7;
+    max-width: none;
+}
+
+.problem-section ul {
+    list-style: none;
+    margin: 0 0 16px 0;
+}
+
+.problem-section li {
+    color: var(--text-secondary);
+    padding: 8px 0 8px 24px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.problem-section li::before {
+    content: "▸";
+    color: var(--accent);
+    position: absolute;
+    left: 0;
+}
+
+.problem-section li strong {
+    color: var(--text-primary);
+}
+
+.problem-section em {
+    color: var(--text-primary);
+    font-style: italic;
+}
+
+.section-note {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.big-idea {
+    font-size: 1.15rem;
+    color: var(--text-primary);
+    line-height: 1.7;
+}
+
+.emphasis {
+    color: var(--text-primary);
+    font-size: 1.05rem;
+}
+
+/* Two column list for telemetry */
+.two-column-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 24px;
+}
+
+/* Special sections */
+.highlight-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px 32px;
+}
+
+.highlight-section h2 {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.warning-section {
+    background: rgba(255, 100, 100, 0.05);
+    border: 1px solid rgba(255, 100, 100, 0.2);
+    border-radius: 8px;
+    padding: 24px 32px;
+}
+
+.warning-section h2 {
+    color: #ff6b6b;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .problem-page h1 {
+        font-size: 1.8rem;
+    }
+
+    .two-column-list {
+        grid-template-columns: 1fr;
+    }
+
+    .highlight-section,
+    .warning-section {
+        padding: 20px 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .problem-page h1 {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    .problem-subtitle {
+        font-size: 1rem;
+    }
+}

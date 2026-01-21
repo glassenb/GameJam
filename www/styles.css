@@ -73,6 +73,14 @@ nav a:hover {
     padding: 80px 0 60px;
 }
 
+.hero-image {
+    max-width: 420px;
+    width: 100%;
+    height: auto;
+    margin: 32px 0 16px;
+    border-radius: 12px;
+}
+
 .hero h1 {
     font-size: 3rem;
     font-weight: 300;

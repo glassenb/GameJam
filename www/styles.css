@@ -185,6 +185,80 @@ nav a:hover {
     margin-top: 8px;
 }
 
+/* Prizes */
+.prizes-box {
+    margin-top: 32px;
+}
+
+.prizes-box h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+}
+
+.prizes-grid {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.prize-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 28px;
+    text-align: center;
+    min-width: 120px;
+}
+
+.prize-first {
+    border-color: #ffd700;
+}
+
+.prize-second {
+    border-color: #c0c0c0;
+}
+
+.prize-third {
+    border-color: #cd7f32;
+}
+
+.prize-place {
+    display: block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+
+.prize-first .prize-place {
+    color: #ffd700;
+}
+
+.prize-second .prize-place {
+    color: #c0c0c0;
+}
+
+.prize-third .prize-place {
+    color: #cd7f32;
+}
+
+.prize-amount {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.judging-note {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+}
+
 /* Schedule */
 .schedule-grid {
     display: grid;
@@ -594,6 +668,20 @@ footer a:hover {
     .hero h1 {
         font-size: 2rem;
         letter-spacing: 2px;
+    }
+
+    .prizes-grid {
+        justify-content: center;
+    }
+
+    .prize-card {
+        flex: 1;
+        min-width: 90px;
+        padding: 16px 12px;
+    }
+
+    .prize-amount {
+        font-size: 1.2rem;
     }
 
     .partners-grid {

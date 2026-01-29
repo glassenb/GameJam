@@ -248,6 +248,20 @@
     text-align: center;
 }
 
+/* Problem images */
+.problem-image {
+    margin: 32px 0;
+}
+
+.problem-image img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    display: block;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .problem-page h1 {
